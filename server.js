@@ -3,6 +3,9 @@ const colors = require('colors');
 const moragan = require('morgan');
 const dotenv = require('dotenv');
 
+// dotenv config
+dotenv.config();
+
 // test object
 const app = express();
 
@@ -18,11 +21,11 @@ app.get('/', (req, res) => {
 });
 
 // port
-const port = process.env.PORT || 8080
+const port = process.env.PORT || 8080;
 
 // listen to port
 app.listen(port, () => {
     console.log(`Server running on port ${process.env.NODE_MODE} Mode on port ${process.env.PORT}`
-        .yellow.bold
+        .bgCyan.white
     );
 });
