@@ -10,13 +10,13 @@ const Register = () => {
 
     // form handler 
     const onFinishHandler = (values) => {
-        console.log(values)
+        console.log(values);
     }
     return (
         <>
             <div className='form-container'>
                 <Form layout='vertical' onFinish={onFinishHandler} className='register-form'>
-                    <h1>Register</h1>
+                    <h1 className='text-center'>Register</h1>
                     <Form.Item label='First Name' name='firstName' rules={[{ required: true, message: 'Please input your first name!' }]}>
                         <Input type='text' placeholder='First Name' required />
                     </Form.Item>
