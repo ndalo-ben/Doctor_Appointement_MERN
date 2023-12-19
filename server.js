@@ -15,7 +15,7 @@ const app = express();
 
 // middlewares
 app.use(express.json());
-app.use(moragan('dev'));
+app.use(moragan("dev"));
 
 // routes
 app.get('/', (req, res) => {
@@ -33,3 +33,4 @@ app.listen(port, () => {
         .bgCyan.white
     );
 });
+
